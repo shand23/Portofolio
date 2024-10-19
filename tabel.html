@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Tutorial</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Tutorial</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="index.html" class="nav-link ">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+                <a href="tutorial.html" class="nav-link">Tutorial</a>
+                <div class="circle"></div>
+              </li>
+            <li class="nav_list">
+              <a href="tabel.html" class="nav-link active-link">Tutorial Tabel</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="form.html" class="nav-link">Tutorial Form</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- -------------- MAIN ---------------- -->
+      <main class="wrapper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="tutorial-content">
+            <h2>Tutorial Membuat Tabel Sederhana</h2> 
+            <p>Tabel digunakan untuk menampilkan data dalam format baris dan kolom yang terstruktur. 
+                Berikut adalah contoh sederhana pembuatan tabel menggunakan HTML.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sanji</td>
+                        <td>Vinsmoke</td>
+                        <td>21</td>
+                        <td>East Blue</td>
+                    </tr>
+                    <tr>
+                        <td>Kane</td>
+                        <td>Harry</td>
+                        <td>30</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ronaldo</td>
+                        <td></td>
+                        <td>35</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h2>Contoh Tabel Mahasiswa :</h2>
+            <div class="responsive-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>IPK Sem 1</th>
+                            <th>IPK Sem 2</th>
+                            <th>IPK Sem 3</th>
+                            <th>IPK Sem 4</th>
+                            <th>IPK Sem 5</th>
+                            <th>IPK Sem 6</th>
+                            <th>IPK Sem 7</th>
+                            <th>IPK Sem 8</th>
+                            <th>Jurusan</th>
+                            <th>Fakultas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>Budi Santoso</td>
+                            <td>3.5</td>
+                            <td>3.6</td>
+                            <td>3.7</td>
+                            <td>3.8</td>
+                            <td>3.9</td>
+                            <td>4.0</td>
+                            <td>4.0</td>
+                            <td>4.0</td>
+                            <td>Teknik Informatika</td>
+                            <td>Fakultas Teknik</td>
+                        </tr>
+                        <tr>
+                            <td>654321</td>
+                            <td>Siti Aisyah</td>
+                            <td>3.2</td>
+                            <td>3.4</td>
+                            <td>3.5</td>
+                            <td>3.6</td>
+                            <td>3.7</td>
+                            <td>3.8</td>
+                            <td>3.9</td>
+                            <td>4.0</td>
+                            <td>Sistem Informasi</td>
+                            <td>Fakultas Teknologi Informasi</td>
+                        </tr>
+                        <tr>
+                            <td>789012</td>
+                            <td>Andi Pratama</td>
+                            <td>3.0</td>
+                            <td>3.1</td>
+                            <td>3.3</td>
+                            <td>3.4</td>
+                            <td>3.5</td>
+                            <td>3.6</td>
+                            <td>3.7</td>
+                            <td>3.8</td>
+                            <td>Teknik Elektro</td>
+                            <td>Fakultas Teknik</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        
+        <section class="tutorial-content">
+            <h2>HTML Table Basics</h2>
+            <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+    
+            <h3>Simple HTML Table</h3>
+            <p>A basic HTML table consists of the following elements:</p>
+            <ul>
+                <li><code>&lt;table&gt;</code> - Defines the table</li>
+                <li><code>&lt;tr&gt;</code> - Defines a table row</li>
+                <li><code>&lt;th&gt;</code> - Defines a header cell</li>
+                <li><code>&lt;td&gt;</code> - Defines a table data (cell)</li>
+            </ul>
+    
+            <p>Here is an example of a simple HTML table:</p>
+            <div class="code-block">
+                <pre><code>&lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+            &lt;td&gt;22&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;</code></pre>
+            </div>
+    
+            <h3>HTML Table with Borders</h3>
+            <p>You can add borders to your table using the <code>border</code> attribute:</p>
+            <div class="code-block">
+                <pre><code>&lt;table border="1"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Doe&lt;/td&gt;
+            &lt;td&gt;22&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;</code></pre>
+            </div>
+    
+            <h3>HTML Table with Styling</h3>
+            <p>You can style your HTML tables using CSS. Here is an example:</p>
+            <div class="code-block">
+                <pre><code>table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }</code></pre>
+            </div>
+        </section>
+    
+        
+
+        
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p><i class="uil uil-envelope"></i> Email:</p>
+                <p><i class="uil uil-phone"></i> Call/Whatsapp :</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-control">
+                <div class="form-inputs">
+                  <input type="text" class="input-field" placeholder="Name" />
+                  <input type="text" class="input-field" placeholder="Email" />
+                </div>
+                <div class="text-area">
+                  <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="form-button">
+                  <button class="btn">
+                    Send <i class="uil uil-message"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- --------------- FOOTER --------------- -->
+      <footer>
+        <div class="top-footer">
+          <p>Sandi Putra Pratama</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+              <li class="footer_menu_list">
+                <a href="index.html#home">Home</a>
+              </li>
+              <li class="footer_menu_list">
+                <a href="index.html#about">About</a>
+              </li>
+              <li class="footer_menu_list">
+                <a href="index.html#projects">Projects</a>
+              </li>
+              <li class="footer_menu_list">
+                <a href="index.html#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        <div class="footer-social-icons">
+            <div class="icon"><i class="uil uil-instagram"onClick="window.open('https://www.instagram.com/shandy_23_/', '_blank')"></i></div>
+            <div class="icon"><i class="uil uil-linkedin-alt" onClick="window.open('https://www.linkedin.com/in/shandy-putra-061b3a2a7/', '_blank')"></i></div>
+            <div class="icon"><i class="uil uil-dribbble"></i></div>
+            <div class="icon"><i class="uil uil-github-alt"onClick="window.open('https://github.com/shand23', '_blank')"></i></div>
+          </div>
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;
+            <a href="index.html#home" style="text-decoration: none">SANDI</a> - All
+            rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.tutorial-content');
+    
+            // Function to check if the section is in view
+            function checkVisibility() {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    const inView = rect.top < window.innerHeight && rect.bottom >= 0;
+    
+                    if (inView) {
+                        section.classList.add('show'); // Add the class to trigger the animation
+                    }
+                });
+            }
+    
+            // Check visibility on scroll
+            window.addEventListener('scroll', checkVisibility);
+            // Check visibility on initial load
+            checkVisibility();
+        });
+    </script>
+    
+  </body>
+</html>

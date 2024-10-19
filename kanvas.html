@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p>Pilih Gambar : </p>
+<img id="gambar" src="assets/images/gundam.jpg" width="220" height="277">
+<p>Mengisi</p>
+<canvas id="kanvas" width="220" height="277"
+style="border: 1px solid #d3d3d3;">
+Your Browser does not support the HTML5 canvas tag.</canvas>
+
+<p><button onclick="kanvas()">Try It</button></p>
+<script>
+    function kanvas(){
+        var c = document.getElementById("kanvas");
+        var ctx = c.getContext("2d");
+        var img = document.getElementById("gambar");
+        ctx.drawImage(img,0,0,c.width,c.height);
+    }
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Pengaturan tampilan body agar form berada di tengah halaman */
+body {
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Pengaturan container form login */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    width: 35m0px;
+}
+
+/* Pengaturan judul form */
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Pengaturan input text dan password */
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="date"] {
+    width: 100%; /* Lebar input 100% dari parent container */
+    padding: 10px; /* Padding dalam input */
+    margin: 10px 0; /* Jarak antar input */
+    border: 1px solid #ccc; /* Border abu-abu pada input */
+    border-radius: 4px; /* Membuat sudut input melengkung */
+}
+
+/* Pengaturan tombol submit dan reset */
+.login-container input[type="submit"],
+.login-container input[type="reset"] {
+    width: 48%; /* Lebar tombol menjadi 48% agar dua tombol bisa berada dalam satu baris */
+    padding: 10px;
+    border: none; /* Menghilangkan border default pada tombol */
+    border-radius: 4px; /* Membuat sudut tombol melengkung */
+    background-color: #4CAF50; /* Warna latar tombol submit hijau */
+    color: white; /* Warna teks tombol putih */
+    cursor: pointer; /* Menampilkan pointer saat tombol di-hover */
+    margin-top: 10px;
+}
+
+/* Pengaturan warna tombol reset (warna merah) */
+.login-container input[type="reset"] {
+    background-color: #f44336;
+}
+
+/* Efek hover saat tombol diklik */
+.login-container input[type="submit"]:hover,
+.login-container input[type="reset"]:hover {
+    opacity: 0.9; /* Mengubah transparansi saat hover */
+}
