@@ -62,48 +62,46 @@
       <main class="wrapper">
         <section class="section" id="tutorials">
             <div class="header">
-                <h1>Tutorial Menggambar Gambar ke Kanvas </h1>
+                <h1>Tutorial for loading images into Canvas</h1>
               </div>
 
          <section id="tutorial-canvas">
   <div class="tutorial-header">
 
     <p>
-      Dalam tutorial ini, Anda akan mempelajari cara memuat gambar dari elemen
-      <code>&lt;img&gt;</code> ke dalam elemen <code>&lt;canvas&gt;</code> menggunakan JavaScript.
-      Langkah-langkah ini cocok untuk pemula yang ingin memahami dasar-dasar manipulasi
-      gambar di HTML5 canvas.
+      In this tutorial, you will learn how to load an image from an
+      <code>&lt;img&gt;</code> element into a <code>&lt;canvas&gt;</code> element using JavaScript.
+      These steps are suitable for beginners who want to understand the basics of image manipulation
+      on an HTML5 canvas.
     </p>
   </div>
   
    <div class="tutorial-step">
-            <h3>Langkah 1: Pilih Gambar</h3>
-            <p>Unggah gambar dari komputer Anda:</p>
+    <h3>Step 1: Select an Image</h3>
+    <p>Upload an image from your computer:</p>
             <div style="width: 130px; height: 50px; border: 1px solid #d3d3d3; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative; margin: 0 auto 10px;">
-              <label for="fileInput" style="position: absolute; background-color: #f0f0f0; color: #333; padding: 10px 20px; border: 1px solid #d3d3d3; border-radius: 5px; font-size: 14px; text-align: center; cursor: pointer; z-index: 1;">Pilih Gambar</label>
+              <label for="fileInput" style="position: absolute; background-color: #f0f0f0; color: #333; padding: 10px 20px; border: 1px solid #d3d3d3; border-radius: 5px; font-size: 14px; text-align: center; cursor: pointer; z-index: 1;">Select Image</label>
               <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)" style="position: absolute; width: 100%; height: 100%; opacity: 0; cursor: pointer;">
             </div>
           </div>
 
           <div class="tutorial-step">
-            <h3>Preview Gambar</h3>
-            <p>Gambar yang dipilih akan ditampilkan di sini:</p>
+            <h3>Image Preview</h3>
+            <p>The selected image will be displayed here:</p>
             <div style="width: 220px; height: 300px; border: 1px solid #d3d3d3; display: flex; justify-content: center; align-items: center; overflow: hidden; margin: 0 auto 10px;">
               <img id="preview" alt="Image Preview" style="max-width: 100%; max-height: 100%; object-fit: contain; display: none;" />
             </div>
           </div>
           
           <div class="tutorial-step">
-            <h3>Langkah 2: Menggambar Gambar ke Kanvas</h3>
-            <p>Gambar yang dipilih akan ditampilkan di kanvas di bawah ini:</p>
-            <canvas id="kanvas" width="220" height="300" style="border: 1px solid #d3d3d3; margin: 0 auto;"></canvas>
-            <p><button onclick="displayImageOnCanvas()">Tampilkan Gambar di Kanvas</button></p>
+            <h3>Step 2: Draw the Image on Canvas</h3>
+            <p>The selected image will be displayed on the canvas below:</p>            <canvas id="kanvas" width="220" height="300" style="border: 1px solid #d3d3d3; margin: 0 auto;"></canvas>
+            <p><button onclick="displayImageOnCanvas()">Display Image on Canvas</button></p>
           </div>
 <br><br>
     <div class="tutorial-step">
-        <h3>JavaScript untuk Menggambar Gambar</h3>
-        <p>Gunakan kode berikut untuk menggambar gambar ke elemen kanvas:</p>
-        <div class="code-block">
+      <h3>JavaScript to Draw the Image</h3>
+      <p>Use the following code to draw the image onto the canvas element:</p>        <div class="code-block">
             &lt;p&gt;Pilih Gambar : &lt;/p&gt;
             &lt;img id="gambar" src="assets/images/gundam.jpg" width="220" height="277"&gt;
             &lt;p&gt;Mengisi&lt;/p&gt;
@@ -190,6 +188,9 @@
               <a href="index.html#projects">Projects</a>
             </li>
             <li class="footer_menu_list">
+              <a href="tutorial.html">Tutorial</a>
+            </li>
+            <li class="footer_menu_list">
               <a href="index.html#contact">Contact</a>
             </li>
           </ul>
@@ -208,7 +209,7 @@
           </p>
         </div>
       </footer>
-    </div>
+    
 
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

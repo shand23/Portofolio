@@ -1,8 +1,10 @@
 /* Styling dasar untuk keseluruhan body */
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+
+* {
+    font-family: "Poppins", sans-serif;
 }
+
+
 
 /* Style untuk section tutorial-content */
 .tutorial-content {
