@@ -1,27 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<p>Pilih Gambar : </p>
-<img id="gambar" src="assets/images/gundam.jpg" width="220" height="277">
-<p>Mengisi</p>
-<canvas id="kanvas" width="220" height="300"
-style="border: 1px solid #d3d3d3;">
-Your Browser does not support the HTML5 canvas tag.</canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<p><button onclick="kanvas()">Try It</button></p>
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/kanvas.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Tutorial</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Tutorial</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                  <a href="index.html" class="nav-link ">Home</a>
+                  <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                  <a href="tutorial.html" class="nav-link active-link">Tutorial</a>
+                  <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                  <a href="loc.html" class="nav-link">Geo Location</a>
+                  <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                  <a href="#contact" class="nav-link">Contact</a>
+                  <div class="circle"></div>
+                </li>
+              </ul>
+          </ul>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- -------------- MAIN ---------------- -->
+      <main class="wrapper">
+        <section class="section" id="tutorials">
+            <div class="header">
+                <h1>Tutorial Menggambar Gambar ke Kanvas </h1>
+              </div>
+
+         <section id="tutorial-canvas">
+  <div class="tutorial-header">
+
+    <p>
+      Dalam tutorial ini, Anda akan mempelajari cara memuat gambar dari elemen
+      <code>&lt;img&gt;</code> ke dalam elemen <code>&lt;canvas&gt;</code> menggunakan JavaScript.
+      Langkah-langkah ini cocok untuk pemula yang ingin memahami dasar-dasar manipulasi
+      gambar di HTML5 canvas.
+    </p>
+  </div>
+  
+   <div class="tutorial-step">
+            <h3>Langkah 1: Pilih Gambar</h3>
+            <p>Unggah gambar dari komputer Anda:</p>
+            <div style="width: 130px; height: 50px; border: 1px solid #d3d3d3; display: flex; justify-content: center; align-items: center; overflow: hidden; position: relative; margin: 0 auto 10px;">
+              <label for="fileInput" style="position: absolute; background-color: #f0f0f0; color: #333; padding: 10px 20px; border: 1px solid #d3d3d3; border-radius: 5px; font-size: 14px; text-align: center; cursor: pointer; z-index: 1;">Pilih Gambar</label>
+              <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)" style="position: absolute; width: 100%; height: 100%; opacity: 0; cursor: pointer;">
+            </div>
+          </div>
+
+          <div class="tutorial-step">
+            <h3>Preview Gambar</h3>
+            <p>Gambar yang dipilih akan ditampilkan di sini:</p>
+            <div style="width: 220px; height: 300px; border: 1px solid #d3d3d3; display: flex; justify-content: center; align-items: center; overflow: hidden; margin: 0 auto 10px;">
+              <img id="preview" alt="Image Preview" style="max-width: 100%; max-height: 100%; object-fit: contain; display: none;" />
+            </div>
+          </div>
+          
+          <div class="tutorial-step">
+            <h3>Langkah 2: Menggambar Gambar ke Kanvas</h3>
+            <p>Gambar yang dipilih akan ditampilkan di kanvas di bawah ini:</p>
+            <canvas id="kanvas" width="220" height="300" style="border: 1px solid #d3d3d3; margin: 0 auto;"></canvas>
+            <p><button onclick="displayImageOnCanvas()">Tampilkan Gambar di Kanvas</button></p>
+          </div>
+<br><br>
+    <div class="tutorial-step">
+        <h3>JavaScript untuk Menggambar Gambar</h3>
+        <p>Gunakan kode berikut untuk menggambar gambar ke elemen kanvas:</p>
+        <div class="code-block">
+            &lt;p&gt;Pilih Gambar : &lt;/p&gt;
+            &lt;img id="gambar" src="assets/images/gundam.jpg" width="220" height="277"&gt;
+            &lt;p&gt;Mengisi&lt;/p&gt;
+            &lt;canvas id="kanvas" width="220" height="300" style="border: 1px solid #d3d3d3;"&gt;
+            Your Browser does not support the HTML5 canvas tag.&lt;/canvas&gt;
+            
+            &lt;p&gt;&lt;button onclick="kanvas()"&gt;Try It&lt;/button&gt;&lt;/p&gt;
+            
+            &lt;script&gt;
+                function kanvas() {
+                    var c = document.getElementById("kanvas");
+                    var ctx = c.getContext("2d");
+                    var img = document.getElementById("gambar");
+                    ctx.drawImage(img, 0, 0, c.width, c.height);
+                }
+            &lt;/script&gt;
+        </div>
+
+  </div>
+</section>
+
 <script>
-    function kanvas(){
-        var c = document.getElementById("kanvas");
-        var ctx = c.getContext("2d");
-        var img = document.getElementById("gambar");
-        ctx.drawImage(img,0,0,c.width,c.height);
-    }
-</script>
-<body>
+    let selectedImage; // Variabel untuk menyimpan gambar yang dipilih
     
-</body>
+    // Fungsi untuk menampilkan preview gambar yang dipilih di elemen img
+    function previewImage(event) {
+      const file = event.target.files[0]; // Ambil file gambar yang dipilih
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          selectedImage = new Image();
+          selectedImage.src = e.target.result;
+          
+          // Tampilkan preview gambar di elemen img
+          const preview = document.getElementById("preview");
+          preview.src = e.target.result;
+          preview.style.display = "block"; // Tampilkan elemen img
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    // Fungsi untuk menggambar gambar di kanvas
+    function displayImageOnCanvas() {
+      if (selectedImage) {
+        const canvas = document.getElementById("kanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Sesuaikan ukuran gambar dengan bingkai kanvas (220x300 px)
+        const canvasWidth = 220;
+        const canvasHeight = 300;
+
+        // Bersihkan kanvas dan gambar ulang dengan ukuran sesuai
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Bersihkan kanvas
+        ctx.drawImage(selectedImage, 0, 0, canvasWidth, canvasHeight);
+      } else {
+        alert("Silakan pilih gambar terlebih dahulu!");
+      }
+    }
+  </script>
+
+
+</main>
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+
+
+
+
+      <!-- --------------- FOOTER --------------- -->
+      <footer>
+        <div class="top-footer">
+          <p>Sandi Putra Pratama</p>
+        </div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="index.html#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="index.html#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="index.html#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon"><i class="uil uil-instagram"onClick="window.open('https://www.instagram.com/shandy_23_/', '_blank')"></i></div>
+          <div class="icon"><i class="uil uil-linkedin-alt" onClick="window.open('https://www.linkedin.com/in/shandy-putra-061b3a2a7/', '_blank')"></i></div>
+          <div class="icon"><i class="uil uil-facebook"onClick="window.open('https://www.facebook.com/iyazh.replayz', '_blank')"></i></div>
+          <div class="icon"><i class="uil uil-github-alt"onClick="window.open('https://github.com/shand23', '_blank')"></i></div>
+        </div>
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;
+            <a href="index.html#home" style="text-decoration: none">SANDI</a> - All
+            rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const sections = document.querySelectorAll('.tutorial-content');
+  
+          // Function to check if the section is in view
+          function checkVisibility() {
+              sections.forEach(section => {
+                  const rect = section.getBoundingClientRect();
+                  const inView = rect.top < window.innerHeight && rect.bottom >= 0;
+  
+                  if (inView) {
+                      section.classList.add('show'); // Add the class to trigger the animation
+                  }
+              });
+          }
+  
+          // Check visibility on scroll
+          window.addEventListener('scroll', checkVisibility);
+          // Check visibility on initial load
+          checkVisibility();
+      });
+  </script>
+  
+  </body>
 </html>

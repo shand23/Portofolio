@@ -4,11 +4,11 @@
 /* ----- VARIABLES ----- */
 :root {
   /* Background and Primary Colors */
-  --body-color: #1f1f1f; /* Hitam abu-abu pekat untuk latar belakang, memberikan kesan elegan dan profesional */
-  --color-white: #ececec; /* Putih keabu-abuan yang lembut untuk mengurangi kontras yang terlalu tajam */
+  --body-color: #3b3b3b; /* Hitam abu-abu pekat untuk latar belakang, memberikan kesan elegan dan profesional */
+  --color-white: #ffffff; /* Putih keabu-abuan yang lembut untuk mengurangi kontras yang terlalu tajam */
 
   /* Text Colors */
-  --text-color-second: #8c8c8c; /* Abu-abu terang untuk teks sekunder, jelas namun tetap elegan */
+  --text-color-second: #b3b0b0; /* Abu-abu terang untuk teks sekunder, jelas namun tetap elegan */
   --text-color-third: #C40C0C; /* Biru tegas untuk heading atau elemen penting, memberikan kesan formal dan berwibawa */
 
   /* Primary Button & Link Colors */
@@ -20,8 +20,11 @@
   --third-color: #d4af37; /* Emas mewah dan tegas untuk elemen penting dan aksen premium */
 
   /* Shadow and Hover Effects */
-  --first-shadow-color: rgb(245, 189, 6); /* Shadow putih lembut untuk menambah kedalaman */
-  --second-shadow-color: rgba(247, 230, 5, 0.7); /* Shadow hitam pekat untuk mempertegas elemen visual */
+  --first-shadow-color:  #C40C0C;;
+
+  /* Shadow putih lembut untuk menambah kedalaman */
+  --second-shadow-color: rgba(212, 175, 55, 1);
+   /* Shadow hitam pekat untuk mempertegas elemen visual */
 }
 
 /* ----- BASE ----- */
@@ -43,7 +46,7 @@ html {
   border-radius: 25px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #918989;
 }
 ::-webkit-scrollbar-thumb {
   background: #ccc;
@@ -80,8 +83,10 @@ i {
 
 /* ------- BASE -------- */
 body {
-  background: var(--body-color);
-  padding-top: 100px;
+  background-color: #2F2F2F;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%232F2F2F'/%3E%3Cstop offset='1' stop-color='%232F2F2F'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.06'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 .container {
   width: 100%;
@@ -91,7 +96,6 @@ body {
 /* ----- NAVIGATION BAR ----- */
 nav {
   position: fixed;
-  top: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -106,6 +110,7 @@ nav {
   position: relative;
 }
 .nav-name {
+
   font-size: 30px;
   font-weight: 600;
   color: var(--text-color-third);
@@ -157,9 +162,6 @@ nav {
 }
 
 /* ----- WRAPPER DESIGN ----- */
-main.wrapper {
-  padding-top: 100px; /* Ensures content starts below the navbar */
-}
 .wrapper {
   padding-inline: 10vw;
 }
@@ -222,6 +224,7 @@ main.wrapper {
   gap: 30px;
 }
 .icon {
+  background-color:white ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,10 +284,6 @@ main.wrapper {
 }
 .scroll-btn i {
   font-size: 20px;
-  
-}
-.scroll-btn p {
-  color: #333;
 }
 
 /* ----- MAIN BOX ----- */
@@ -311,6 +310,7 @@ main.wrapper {
   font-weight: 600;
   color: var(--text-color-second);
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 .top-header span {
   color: #999;
@@ -332,7 +332,7 @@ h3 {
   padding-inline: 20px;
   width: 100%;
   background: var(--color-white);
-  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+  box-shadow:  0px 0px 10px 5px var(--first-shadow-color);
   border-radius: 20px;
 }
 .about-info p {
@@ -390,7 +390,7 @@ h3 {
   height: 250px;
   background: var(--color-white);
   border-radius: 20px;
-  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+  box-shadow: 0px 0px 10px 5px var(--second-shadow-color);
   overflow: hidden;
 }
 .project-box > i {
@@ -400,7 +400,7 @@ h3 {
 }
 .project-box label {
   font-size: 15px;
-  color: #292929;
+  color: #777;
 }
 .project-box::after,
 .contact-info::after {
@@ -483,10 +483,12 @@ h3 {
   border-radius: 10px;
   padding-inline: 20px;
   outline: none;
+  color: #fffcfc;
 }
 textarea {
   width: 100%;
   height: 250px;
+  color: #fffcfc;
   background: transparent;
   border: 2px solid #aaa;
   border-radius: 10px;
@@ -522,7 +524,6 @@ footer {
 .top-footer p {
   font-size: 25px;
   font-weight: 600;
-  color: #333;
 }
 .middle-footer .footer-menu {
   display: flex;
@@ -545,170 +546,6 @@ footer {
   margin-top: 10px;
 }
 
-.bottom-footer p {
-  color: #333;
-}
-
-/* Style for clickable headings */
-h2 a {
-  color: var(--first-color); /* Apply the orange color */
-  text-decoration: none; /* Remove the underline */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-h2 a:hover {
-  color: var(--first-color-hover); /* Change to a darker shade on hover */
-}
-
-h2 a:active {
-  color: var(--first-color-hover); /* Same for active state */
-}
-
-
-/* Styles for the body and overall content */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #383838;
-}
-
-header {
-  text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 1px 0;
-}
-
-header h1{
-  color:#FF8A08;
-}
-
-h1, h2, h3 {
-  color: #333;
-}
-
-.tutorial-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  opacity: 0; /* Start as invisible */
-  transform: translateY(20px); /* Start slightly lower */
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Transition effect */
-
-}
-
-.tutorial-content.show {
-  opacity: 1; /* Make visible */
-  transform: translateY(0); /* Slide into place */
-}
-
-p, ul {
-  line-height: 1.6;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-.code-block {
-  background-color: #f9f9f9;
-  border: 1px solid #5a5959;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-
-code {
-  background-color: #eef;
-  padding: 2px 4px;
-  font-family: 'Courier New', Courier, monospace;
-  color:#C40C0C;
-}
-/* Styles for the body and overall content */
-
-
-h1, h2 , h3{
-  color: #FF8A08;
-}
-
-.tutorial-content {
-  background-color: rgb(68, 68, 68);
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-p, ul {
-  line-height: 1.6;
-  color: #f9f9f9;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #C40C0C;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #fffdfd;
-}
-
-/* Tambahkan ini di file CSS (tes.css) */
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
-}
-
-/* Membuat tabel responsif */
-.responsive-table {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.responsive-table table {
-  width: 100%;
-  min-width: 600px; /* Set minimal width agar tabel tidak terlalu kecil */
-}
-
-@media screen and (max-width: 600px) {
-  table {
-      font-size: 12px; /* Mengurangi ukuran font di layar kecil */
-  }
-
-  th, td {
-      padding: 2px;
-  }
-}
-
-
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
   .featured-text {
@@ -726,31 +563,23 @@ th, td {
   .nav-button {
     display: none;
   }
-  .nav-menu-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .nav-menu.responsive {
     left: 0;
   }
   .nav-menu {
     position: fixed;
-    top: 90px; /* Adjust to the navbar height */
+    top: 80px;
     left: -100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent */
-    backdrop-filter: blur(10px); /* Optional: blur the background */
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
     width: 100%;
-    height: 100%;
-    transition: left 0.3s ease-in-out;
+    min-height: 450px;
+    height: 90vh;
+    transition: 0.3s;
   }
-  .nav-menu.responsive {
-    left: 0;
-  }
-
   .nav_menu_list {
     flex-direction: column;
   }

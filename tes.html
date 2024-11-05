@@ -11,8 +11,8 @@
     />
 
     <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/tabel.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="form.css" />
 
     <!-- --------- FAVICON ---------- -->
     <link
@@ -34,91 +34,91 @@
         <div class="nav-menu" id="myNavMenu">
           <ul class="nav_menu_list">
             <li class="nav_list">
-              <a href="index.html" class="nav-link ">Home</a>
-              <div class="circle"></div>
-            </li>
-            <li class="nav_list">
-              <a href="tutorial.html" class="nav-link active-link">Tutorial</a>
-              <div class="circle"></div>
-            </li>
-            <li class="nav_list">
-              <a href="loc.html" class="nav-link">Geo Location</a>
-              <div class="circle"></div>
-            </li>
-            <li class="nav_list">
-              <a href="#contact" class="nav-link">Contact</a>
-              <div class="circle"></div>
-            </li>
+                <a href="index.html" class="nav-link ">Home</a>
+                <div class="circle"></div>
+              </li>
+              <li class="nav_list">
+                <a href="tutorial.html" class="nav-link active-link">Tutorial</a>
+                <div class="circle"></div>
+              </li>
+              <li class="nav_list">
+                <a href="loc.html" class="nav-link">Geo Location</a>
+                <div class="circle"></div>
+              </li>
+              <li class="nav_list">
+                <a href="#contact" class="nav-link">Contact</a>
+                <div class="circle"></div>
+              </li>
           </ul>
         </div>
         <div class="nav-menu-btn">
           <i class="uil uil-bars" onclick="myMenuFunction()"></i>
         </div>
       </nav>
-</div>
 
       <!-- -------------- MAIN ---------------- -->
       <main class="wrapper">
         <section class="section" id="tutorials">
-          <div class="top-header">
-            <h1>Tutorials</h1>
-          </div>
+            <div class="header">
+                <h1>Tutorial Menggambar Gambar ke Kanvas </h1>
+              </div>
 
-          <!-- Tutorial Links -->
-          <div class="project-container">
-            <!-- Tutorial Form -->
-            <div class="project-box" onClick="window.location.href='form.html'">
-              <i class="uil uil-file-alt"></i>
-              <h3>Form Tutorial</h3>
-              <label>Learn how to build forms </label>
-            </div>
-            <div
-              class="project-box"
-              onClick="window.location.href='loc.html'"
-            >
-              <i class="uil uil-location-point"></i>
-              <h3>Tutorial API Geolocation</h3>
-              <label>Learn how to build website API</label>
-            </div>
-            <!-- Tutorial Tabel -->
-            <div
-              class="project-box"
-              onClick="window.location.href='tabel.html'"
-            >
-              <i class="uil uil-table"></i>
-              <h3>Tabel Tutorial</h3>
-              <label>learn how to build tables </label>
-            </div>
-          
+              <section class="tutorial-content">
+               <h2>Langkah 1: Buat Repositori GitHub</h2>
+    <p>1. Buka <a href="https://github.com" target="_blank">GitHub</a> dan login ke akun Anda.</p>
+    <p>2. Klik tombol <b>New</b> untuk membuat repositori baru.</p>
+    <p>3. Berikan nama repositori (misalnya <code>my-tutorial-website</code>).</p>
+    <p>4. Setel repositori ke <b>Public</b> dan klik <b>Create repository</b>.</p>
+            </section>
+              
+            <section class="tutorial-content">
+                <h2>Langkah 2: Upload Kode Website Anda ke Repositori</h2>
+    <p>Ada dua cara untuk mengunggah file:</p>
+    <ul>
+      <li><b>Upload langsung di GitHub:</b></li>
+      <p>1. Di dalam repositori baru, klik <b>Add file</b> &gt; <b>Upload files</b>.</p>
+      <p>2. Seret dan jatuhkan file HTML, CSS, JavaScript, dan gambar Anda ke dalam repositori.</p>
+      <p>3. Setelah selesai, klik <b>Commit changes</b> untuk mengunggah file.</p>
+      <li><b>Upload menggunakan Git di terminal:</b></li>
+      <p>1. Buka terminal dan arahkan ke direktori proyek Anda.</p>
+      <p>2. Jalankan perintah berikut untuk menginisialisasi Git, menambahkan file, dan mendorongnya ke GitHub:</p>
+      <div class="code-section">
+        <div class="code-card">
+        git init<br>
+        git add .<br>
+        git commit -m "Initial commit"<br>
+        git branch -M main<br>
+        git remote add origin https://github.com/username/my-tutorial-website.git<br>
+        git push -u origin main
+      </div>
+    </div>
+    </ul>
+  </section>   
+  
+  <section class="tutorial-content">
+    <h2>Langkah 3: Aktifkan GitHub Pages</h2>
+    <p>1. Buka tab <b>Settings</b> di repositori GitHub Anda.</p>
+    <p>2. Gulir ke bawah ke bagian <b>GitHub Pages</b>.</p>
+    <p>3. Pada opsi <b>Source</b>, pilih <code>main</code> dan folder <code>/ (root)</code>.</p>
+    <p>4. Klik <b>Save</b>.</p>
+    <p>Setelah itu, URL untuk website Anda akan terlihat di bagian GitHub Pages. URL biasanya seperti <code>https://username.github.io/my-tutorial-website</code>.</p>
 
-          <div
-              class="project-box"
-              onClick="window.location.href='kanvas.html'"
-            >
-              <i class="uil uil-picture"></i>
-              <h3>Canvas Tutorial</h3>
-              <label>learn how to build Canvas</label>
-            </div>
+  </section>
 
-            <div
-              class="project-box"
-              onClick="window.location.href='tes.html'"
-            >
-              <i class="uil uil-github"></i>
-              <h3>Deploy Tutorial</h3>
-              <label>learn how to connect github </label>
-            </div>
+<section class="tutorial-content">
+    <h2>Langkah 4: Cek Website Anda</h2>
+    <p>Buka URL yang dihasilkan untuk melihat website Anda yang sudah online!</p>
+
+</section>
 
 
-
-          </div>
-          
-        </section>
-      </main>
+</main>
 
         <!-- -------------- CONTACT BOX ---------------- -->
 
-       
+        
+
+
 
       <!-- --------------- FOOTER --------------- -->
       <footer>
@@ -155,7 +155,7 @@
           </p>
         </div>
       </footer>
-    
+    </div>
 
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

@@ -1,0 +1,102 @@
+/* Style for the tutorial canvas section */
+#tutorial-canvas {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+
+    background-color: #5a5959;
+    border-radius: 8px;
+  }
+  
+  .tutorial-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .tutorial-header p {
+    font-size: 16px;
+    color: #fffefe;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 5em;
+  }
+  .header h1 {
+    font-weight: 600;
+    color: #ff8a08;
+    margin-top: 30px;
+  }
+
+
+  .tutorial-step {
+    margin-bottom: 20px;
+  }
+  
+  .tutorial-step h3 {
+    font-size: 20px;
+    color: #FF8A08;
+    margin-bottom: 8px;
+  }
+  
+  .tutorial-step p {
+    font-size: 16px;
+    color: #fffefe;
+  }
+  
+  #kanvas {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #3b3b3b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto;
+    display: block;
+  }
+  
+  button:hover {
+    background-color: #C40C0C;
+  }
+  
+  /* Style for the image in the tutorial */
+  #tutorial-canvas img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style for the code block */
+.code-block {
+    background-color: #2e2e2e;
+    color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  /* Ensuring code text uses monospace for better readability */
+  .code-block pre {
+    margin: 0;
+    white-space: pre-wrap;
+  }
+  
+  .code-block code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #e6e6e6;
+  }
+  

@@ -55,8 +55,11 @@
           </ul>
         </div>
         <div class="nav-button">
-          <button class="btn"><a href="assets/Sandi_cv.pdf" download="sandi_cv.pdf" > Download CV</a>
-            <i class="uil uil-file-alt" ></i>
+          <a href="assets/Sandi_cv.pdf" download="Sandi_cv.pdf">
+            <button class="btn">
+              Download CV <i class="uil uil-import"></i>
+            </button>
+          </a>
           </button>
           
         </div>
@@ -87,15 +90,16 @@
               </p>
             </div>
             <div class="featured-text-btn">
-              <button class="btn blue-btn">Hire Me</button>
-              <a href="assets/Sandi_cv.pdf" download="sandi_cv.pdf" class="btn">
-                Download CV <i class="uil uil-file-alt"></i>
+              <a href="assets/Sandi_cv.pdf" download="Sandi_cv.pdf">
+                <button class="btn">
+                  Download CV <i class="uil uil-import"></i>
+                </button>
               </a>
             </div>
             <div class="social_icons">
               <div class="icon"><i class="uil uil-instagram"onClick="window.open('https://www.instagram.com/shandy_23_/', '_blank')"></i></div>
               <div class="icon"><i class="uil uil-linkedin-alt" onClick="window.open('https://www.linkedin.com/in/shandy-putra-061b3a2a7/', '_blank')"></i></div>
-              <div class="icon"><i class="uil uil-dribbble"></i></div>
+              <div class="icon"><i class="uil uil-facebook"onClick="window.open('https://www.facebook.com/iyazh.replayz', '_blank')"></i></div>
               <div class="icon"><i class="uil uil-github-alt"onClick="window.open('https://github.com/shand23', '_blank')"></i></div>
               </div>
           </div>
@@ -129,9 +133,11 @@
                   I am committed to delivering creative solutions that meet digital needs and enhance user interaction.
                 </p>
                 <div class="about-btn">
-                  <button class="btn">
-                    Download CV <i class="uil uil-import"></i>
-                  </button>
+                  <a href="assets/Sandi_cv.pdf" download="Sandi_cv.pdf">
+                    <button class="btn">
+                      Download CV <i class="uil uil-import"></i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -155,7 +161,7 @@
                 <div class="skills-list">
                   <span>PHP</span>
                   <span>JAVA</span>
-                  <span>Python</span>
+                 
                   
                 </div>
               </div>
@@ -187,16 +193,22 @@
               <label>Tankaman Natural Park </label>
             </div>
             <div class="project-box"
-            onClick="window.open('https://google.com', '_blank')">
+            onClick="window.location.href='https://xorennn.github.io/kostbudi/index.html'">
               <i class="uil uil-home"></i>
               <h3>boarding house rental web</h3>
               <label>Kost Pak Budi Web</label>
             </div>
             <div class="project-box"
-            onClick="window.location.href='https://drive.google.com/file/d/1fp34Im3kfUrqYJJHBpkY_0-UZfnJDF3w/view?usp=sharing'">
+            onClick="window.location.href=' https://shand23.github.io/webresto/'">
               <i class="uil uil-restaurant"></i>
               <h3>restaurant web</h3>
               <label>Noodle & Co</label>
+            </div>
+            <div class="project-box"
+            onClick="window.location.href='https://www.canva.com/design/DAGOyX341Og/8qLOm9A4Il-a2wltOGWxjg/edit?utm_content=DAGOyX341Og&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'">
+              <i class="uil uil-apps"></i>
+              <h3>UI Manajemen Stok</h3>
+              <label>Ui Desktop & Android </label>
             </div>
           </div>
         </section>
@@ -212,26 +224,48 @@
             <div class="col">
               <div class="contact-info">
                 <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                <p><i class="uil uil-envelope"></i> Email:</p>
-                <p><i class="uil uil-phone"></i> Call/Whatsapp :</p>
+                <p><i class="uil uil-envelope"></i> Email: shandyputa2323@gmail.com</p>
+                <p><i class="uil uil-phone"></i> Call/Whatsapp :+6282241395457</p>
               </div>
             </div>
             <div class="col">
               <div class="form-control">
                 <div class="form-inputs">
-                  <input type="text" class="input-field" placeholder="Name" />
-                  <input type="text" class="input-field" placeholder="Email" />
+                  <input type="text" class="input-field" id="name" placeholder="Name" />
+                  <input type="text" class="input-field" id="number" placeholder="Nomor" />
                 </div>
                 <div class="text-area">
-                  <textarea placeholder="Message"></textarea>
+                  <textarea id="message" placeholder="Message"></textarea>
                 </div>
                 <div class="form-button">
-                  <button class="btn">
+                  <button class="btn" onclick="sendMessage()">
                     Send <i class="uil uil-message"></i>
                   </button>
                 </div>
               </div>
             </div>
+            
+            <script>
+              function sendMessage() {
+                // Mengambil nilai input dari form
+                const name = document.getElementById("name").value;
+                const number = document.getElementById("number").value;
+                const message = document.getElementById("message").value;
+            
+                // Mengecek apakah semua field telah terisi
+                if (name && number && message) {
+                  // Membuat URL WhatsApp dengan template pesan
+                  const whatsappNumber = "082241395457"; // Nomor tujuan WhatsApp
+                  const whatsappURL = `https://wa.me/${whatsappNumber}?text=Halo, nama saya ${name}, nomor saya ${number}. Pesan saya: ${message}`;
+            
+                  // Redirect ke URL WhatsApp
+                  window.open(whatsappURL, "_blank");
+                } else {
+                  alert("Mohon isi semua kolom.");
+                }
+              }
+            </script>
+            
           </div>
         </section>
       </main>
@@ -260,7 +294,7 @@
         <div class="footer-social-icons">
           <div class="icon"><i class="uil uil-instagram"onClick="window.open('https://www.instagram.com/shandy_23_/', '_blank')"></i></div>
           <div class="icon"><i class="uil uil-linkedin-alt" onClick="window.open('https://www.linkedin.com/in/shandy-putra-061b3a2a7/', '_blank')"></i></div>
-          <div class="icon"><i class="uil uil-dribbble"></i></div>
+          <div class="icon"><i class="uil uil-facebook"onClick="window.open('https://www.facebook.com/iyazh.replayz', '_blank')"></i></div>
           <div class="icon"><i class="uil uil-github-alt"onClick="window.open('https://github.com/shand23', '_blank')"></i></div>
         </div>
         <div class="bottom-footer">
